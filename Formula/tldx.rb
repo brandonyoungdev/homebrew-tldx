@@ -5,21 +5,21 @@
 class Tldx < Formula
   desc "tldx is a fast, developer-first CLI tool for researching available domains across multiple TLDs with permutations"
   homepage ""
-  version "0.0.1"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.0.1"
-      sha256 "0c2d958d16a649315c70bcbd82d8549c6e2443dba7fc65fcfec3b4e3700fc795"
+      url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.1.0"
+      sha256 "e70e8aec3a5b50a3483a3226d6729b76af10439c221c9a67c6e6204110deabff"
 
       def install
         bin.install "tldx"
       end
     end
     on_arm do
-      url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.0.1"
-      sha256 "fc43cebc089af3363abb8f9fc8a7dd1e19b222d91ce3947368f74d3ce768baee"
+      url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.1.0"
+      sha256 "1b528c9bd0459eb9f5ee2d4fd0b534f5ceb0f8be34ef7cc47bdb8c5fcbfb942b"
 
       def install
         bin.install "tldx"
@@ -30,8 +30,8 @@ class Tldx < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.0.1"
-        sha256 "9cda636a5872bebeeafdcea957d683409fb6093b17e7ca3e61c941d28143ce83"
+        url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.1.0"
+        sha256 "052a7a9eb4ad0daf3db2e276fb56d0c40e405c78876c2a2d4adedf34af9edc67"
 
         def install
           bin.install "tldx"
@@ -40,8 +40,8 @@ class Tldx < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.0.1"
-        sha256 "1eb1428e998d1be7537cc79cf65202ee597f1f901ae81c256528ff05756d4136"
+        url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.1.0"
+        sha256 "6b19cc06a5c04852f79946cd93a2fd6530268c3a7b14fceb65ea91f376d266b5"
 
         def install
           bin.install "tldx"
