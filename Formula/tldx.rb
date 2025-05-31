@@ -5,21 +5,21 @@
 class Tldx < Formula
   desc "tldx is a fast, developer-first CLI tool for researching available domains across multiple TLDs with permutations"
   homepage ""
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.1.0"
-      sha256 "e70e8aec3a5b50a3483a3226d6729b76af10439c221c9a67c6e6204110deabff"
+      url "https://github.com/brandonyoungdev/tldx/releases/download/v0.2.0/tldx_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7ccce38a40bb4ec8d1604bca45ca86b45962cd0eda65914f6b429df58cb5ff0c"
 
       def install
         bin.install "tldx"
       end
     end
     on_arm do
-      url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.1.0"
-      sha256 "1b528c9bd0459eb9f5ee2d4fd0b534f5ceb0f8be34ef7cc47bdb8c5fcbfb942b"
+      url "https://github.com/brandonyoungdev/tldx/releases/download/v0.2.0/tldx_0.2.0_darwin_arm64.tar.gz"
+      sha256 "8166d21145661bdd92e89ad4b955dd6e300a814ec0f97bd2b799552b594e0627"
 
       def install
         bin.install "tldx"
@@ -30,8 +30,8 @@ class Tldx < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.1.0"
-        sha256 "052a7a9eb4ad0daf3db2e276fb56d0c40e405c78876c2a2d4adedf34af9edc67"
+        url "https://github.com/brandonyoungdev/tldx/releases/download/v0.2.0/tldx_0.2.0_linux_amd64.tar.gz"
+        sha256 "1c42536b084a1e3491dcdc699245b615f2bc617c1b373231b0d92a5912dc248c"
 
         def install
           bin.install "tldx"
@@ -40,8 +40,8 @@ class Tldx < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brandonyoungdev/tldx/releases/tag/v0.1.0"
-        sha256 "6b19cc06a5c04852f79946cd93a2fd6530268c3a7b14fceb65ea91f376d266b5"
+        url "https://github.com/brandonyoungdev/tldx/releases/download/v0.2.0/tldx_0.2.0_linux_arm64.tar.gz"
+        sha256 "04442a84c3b0996e82677d18713acb2a7b327dc0ecdc23c546fe764e84945174"
 
         def install
           bin.install "tldx"
