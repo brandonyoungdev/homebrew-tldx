@@ -5,21 +5,21 @@
 class Tldx < Formula
   desc "tldx is a fast, developer-first CLI tool for researching available domains across multiple TLDs with permutations"
   homepage ""
-  version "1.3.0"
+  version "1.3.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/brandonyoungdev/tldx/releases/download/v1.3.0/tldx_1.3.0_darwin_amd64.tar.gz"
-      sha256 "9ecb43d05a4a28ca180ef5d5f84d9e4f278a5616e7d06bc9ef47c1b5058d8ee5"
+      url "https://github.com/brandonyoungdev/tldx/releases/download/v1.3.2/tldx_1.3.2_darwin_amd64.tar.gz"
+      sha256 "00b736080d10ebe82c1623c0de01d25e7f8bf8b1ad77389b8e1d57fba1aeaad8"
 
       def install
         bin.install "tldx"
       end
     end
     on_arm do
-      url "https://github.com/brandonyoungdev/tldx/releases/download/v1.3.0/tldx_1.3.0_darwin_arm64.tar.gz"
-      sha256 "96603b37bbd16089cf8694379b8d4e21edcae46780dd6239e15945a50cd82cfe"
+      url "https://github.com/brandonyoungdev/tldx/releases/download/v1.3.2/tldx_1.3.2_darwin_arm64.tar.gz"
+      sha256 "5f3e330a494ef640cb829cb668e36b0fcdc8f7ad65571c3186d4ee0d58884f3f"
 
       def install
         bin.install "tldx"
@@ -30,8 +30,8 @@ class Tldx < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brandonyoungdev/tldx/releases/download/v1.3.0/tldx_1.3.0_linux_amd64.tar.gz"
-        sha256 "7ac0e2d35c5beeef036cb35e6777c05a269be1a39ee4baee22ad33affc6e7486"
+        url "https://github.com/brandonyoungdev/tldx/releases/download/v1.3.2/tldx_1.3.2_linux_amd64.tar.gz"
+        sha256 "c10aed03ce1075ae4a80501e9c02a273d5864ca112685817e92dcb6a602c8be2"
 
         def install
           bin.install "tldx"
@@ -40,8 +40,8 @@ class Tldx < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/brandonyoungdev/tldx/releases/download/v1.3.0/tldx_1.3.0_linux_arm64.tar.gz"
-        sha256 "3eb074efbfd71e9c3695a96c5105684e75742e0bcae0fe438a65dc827400bf31"
+        url "https://github.com/brandonyoungdev/tldx/releases/download/v1.3.2/tldx_1.3.2_linux_arm64.tar.gz"
+        sha256 "22cfaa090ce48653cc66d68fb45d6fcd2651fbbfd46f6756d2e656539836004e"
 
         def install
           bin.install "tldx"
